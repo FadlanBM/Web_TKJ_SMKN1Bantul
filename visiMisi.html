@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="	https://www.smkn1bantul.sch.id/media_library/images/7963fd134a319515ae2933b360d167b0.png" rel="icon">
+  <link href="assets/img/Logo-removebg-preview.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
