@@ -23,6 +23,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/DataSiswa.css" rel="stylesheet">
@@ -88,51 +90,15 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Data Siswa</h2>
+        <h2>Form Data Siswa</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Data Siswa</li>
+          <li>Form Data Siswa</li>
         </ol>
       </div>
 
     </div>
   </section><!-- End Breadcrumbs -->
-
-
-  <div class="table-responsive">
-    <table class="table table-responsive table-borderless">
-        
-      <thead>
-        <tr class="bg-light">
-         
-          <li><a class="" href="index.html">Home</a></li>
-          <li><a class="" href="visiMisi.html">Visi Misi</a></li>
-          <li><a class="" href="visiMisi.html">Prestasi</a></li>
-          <li><a class="" href="galeri.html">Galeri</a></li>
-          <li><a class="active" href="datasiswa.html">Data Siswa</a></li>
-          <li><a class="" href="dataguru.html">Data Guru</a></li>
-          <li><a class="" href="berita.html">Berita</a></li>
-          <li><a class="" href="contact.html">Contact</a></li>
-         
-        </tr>
-      </thead>
-  <tbody>
-    <tr>
-   
-      
-      
-    </tr>
-    
-    
-     
-     
-     
-  </tbody>
-</table>
-  
-  </div>
-    
-</div>
 
    <!-- ======= Footer ======= -->
    <footer id="footer">
@@ -226,3 +192,4 @@
 </body>
 
 </html>
+

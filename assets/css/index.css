@@ -441,86 +441,6 @@ h6 {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: calc(100vh - 110px);
-  background-size: cover;
-  position: relative;
-}
-
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-#hero h2 {
-  color: #eee;
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  padding: 10px 28px;
-  transition: 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#hero .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero {
-    text-align: center;
-  }
-
-  #hero .container {
-    padding-top: 40px;
-  }
-
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
-
 /* 
 ---------------------------------------------
 banner
@@ -528,8 +448,9 @@ banner
 */
 
 .main-button a {
+  font-family: 'Roboto Slab', serif;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   padding: 12px 20px;
   background-color: #ed563b;
   color: #fff;
@@ -543,6 +464,20 @@ banner
   background-color: #f9735b;
 }
 
+.main-banner .video-overlay .caption h2 {
+  color: rgb(235, 199, 199);
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.main-banner .video-overlay .caption .hi{
+  font-size: 70px;
+}
+
+.main-banner .video-overlay .caption .kelas{
+  color: rgb(255, 38, 38);
+}
 
 .main-banner {
   position: relative;
@@ -566,7 +501,7 @@ banner
     background-color: rgba(35,45,57,0.8);
     top: 0;
     left: 0;
-    bottom: 7px;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -588,24 +523,10 @@ banner
   letter-spacing: 0.5px;
 }
 
-.main-banner .caption h2 {
-  margin-top: 30px;
-  margin-bottom: 25px;
-  font-size: 84px;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 1px;
-}
 
-.main-banner .caption h2 em {
-  font-style: normal;
-  color: #ed563b;
-  font-weight: 900;
-}
 
 /*--------------------------------------------------------------
-# Sections General
+# Penjelasanan Tkj General
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
@@ -662,7 +583,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Penjelasan TKJ
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
@@ -689,15 +610,16 @@ section {
 }
 
 
+
+
 /*--------------------------------------------------------------
-# Clients
+# Sponsor TKJ
 --------------------------------------------------------------*/
 .clients {
   background: #f2f2f2;
   padding: 15px 0;
   text-align: center;
 }
-
 .clients img {
   width: 50%;
   filter: grayscale(100);
@@ -717,6 +639,34 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Data Tentang Tkj
+--------------------------------------------------------------*/
+#cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/HalamanDepan.jpeg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.cta span {
+  font-size: 48px;
+  display: block;
+  color: #34b7a7;
+}
+.cta h2 {
+  color: #fff;
+}
+
+.cta p {
+  color: #fff;
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -728,7 +678,7 @@ section {
 }
 
 .skills .section-title h2{
-  color: yellowgreen;
+  color: red;
 }
 
 .skills .progress .skill {
@@ -757,71 +707,8 @@ section {
   background-color: #34b7a7;
 }
 
-
 /*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-.cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/lobi.jpeg") fixed center center;
-  background-size: cover;
-  padding: 120px 0;
-}
-
-.cta span {
-  font-size: 48px;
-  display: block;
-  color: #34b7a7;
-}
-.cta h2 {
-  color: #fff;
-}
-
-.cta p {
-  color: #fff;
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #efefef;
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #333333;
-  content: "/";
-}
-
-
-
-/*--------------------------------------------------------------
-# Recent Blog Posts Section
+# berita Index
 --------------------------------------------------------------*/
 .recent-blog-posts .post-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
@@ -833,7 +720,7 @@ section {
 }
 .recent-blog-posts .section-header h2 {
   text-align: center;
-  color: yellowgreen;
+  color: red;
 }
 
 .recent-blog-posts .section-header p{
@@ -912,7 +799,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# Pesan Guru Produktif
 --------------------------------------------------------------*/
 .testimonials .section-header {
   margin-bottom: 40px;
@@ -921,6 +808,10 @@ section {
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
+}
+
+.testimonials .section-title h2{
+  color: red;
 }
 
 .testimonials .testimonial-item {

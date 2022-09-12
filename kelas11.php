@@ -71,6 +71,7 @@
                     <li><a class="" href="visiMisi.html">Visi dan Misi</a></li>
                     <li><a class="" href="Prestasi.html">Prestasi</a></li>
                     <li><a class="" href="galeri.html">Galeri</a></li>
+                    <li><a class="" href="Pembelajaran.html">Pembelajaran</a></li>
                 </ul>
           <li class="dropdown"><a class="active" href="#"><span>Data TKJ</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>

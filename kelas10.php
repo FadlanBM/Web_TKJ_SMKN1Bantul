@@ -71,6 +71,7 @@
                     <li><a class="" href="visiMisi.html">Visi dan Misi</a></li>
                     <li><a class="" href="Prestasi.html">Prestasi</a></li>
                     <li><a class="" href="galeri.html">Galeri</a></li>
+                    <li><a class="" href="Pembelajaran.html">Pembelajaran</a></li>
                 </ul>
           <li class="dropdown"><a class="active" href="#"><span>Data TKJ</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -110,40 +111,74 @@
   </section><!-- End Breadcrumbs -->
 
 
-  <div class="table-responsive">
-    <table class="table table-responsive table-borderless">
-        
-      <thead>
-        <tr class="bg-light">
-         
-          <li><a class="" href="index.html">Home</a></li>
-          <li><a class="" href="visiMisi.html">Visi Misi</a></li>
-          <li><a class="" href="visiMisi.html">Prestasi</a></li>
-          <li><a class="" href="galeri.html">Galeri</a></li>
-          <li><a class="active" href="datasiswa.html">Data Siswa</a></li>
-          <li><a class="" href="dataguru.html">Data Guru</a></li>
-          <li><a class="" href="berita.html">Berita</a></li>
-          <li><a class="" href="contact.html">Contact</a></li>
-         
-        </tr>
-      </thead>
-  <tbody>
-    <tr>
+      <!-- ======= Tabel ======= -->
+
+      <form action="" method="get" class="form mt-4">
+ <input type="text" name="cari" placeholder="Cari Siswa..." class="inputtext">
+ <button class="button-62">Cari</button>
+</form>
+ 
+<?php 
+if(isset($_GET['cari'])){
+ $cari = $_GET['cari'];
+}
+?>
+
+
+    <div class="container my-5">
+<div class="shadow-4 rounded-5 overflow-hidden shadow p-3 mb-5 bg-white rounded">
+    <table class="table align-middle mb-0 bg-white">
+ <thead class="bg-light">
+  <tr>
+    <th></th>
+    <th>NIS</th>
+    <TH>Nama</TH>
+    <TH>Kelas</TH>
+    <th>Alamat</th>
+  </tr>
+ </thead>
+<tbody>
+    <?php
+ 
+    
+ require('koneksi.php');
+ $query1= mysqli_query($connection,"SELECT * FROM user");
+
+ if(isset($_GET['cari'])){
+	$cari = $_GET['cari'];
+	echo "<b>Hasil pencarian : ".$cari."</b>";
+}
+
+if(isset($_GET['cari'])){
+  $cari = $_GET['cari'];
+  $query1 = mysqli_query($connection,"SELECT * FROM user where name like '%".$cari."%'");    
+ }else{
+  $query1 = mysqli_query($connection,"SELECT * FROM user");  
+ }
    
-      
-      
+ while($row=mysqli_fetch_array($query1))
+ {
+    ?>
+</tbody>
+    <tr>
+    <td><img src="assets/img/icon.png" alt="" width="80px" class="rounded ml-2"></td>
+      <td><?php echo  $row['NIS'];?></td>
+      <td><?php echo  $row['name'];?></td>
+      <td><?php echo  $row['kelas'];?></td>
+      <td><?php echo  $row['alamat'];?></td>
     </tr>
+    <?php }  ?>
+</tbody>
+
+        </table>
+ </div>
+ </div>
+      
+    <!-- End tabel Section -->
+
     
-    
-     
-     
-     
-  </tbody>
-</table>
-  
-  </div>
-    
-</div>
+
+  </main><!-- End #main -->
 
    <!-- ======= Footer ======= -->
    <footer id="footer">

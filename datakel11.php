@@ -86,10 +86,10 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Data Siswa</h2>
+      <h2>Form Data Siswa</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Data Siswa</li>
+          <li>Form Data Siswa</li>
         </ol>
       </div>
 
